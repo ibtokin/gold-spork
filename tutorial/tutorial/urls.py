@@ -4,9 +4,9 @@ from django.contrib import admin
 urlpatterns = patterns('',
     url(r'^', include('snippets.urls')),
 
-                   '''# Other Examples:
+                '''# Other Examples:
     # url(r'^$', 'tutorial.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     url(r'^admin/', include(admin.site.urls)),
-                    '''
+                '''
 )

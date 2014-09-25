@@ -61,7 +61,7 @@ WSGI_APPLICATION = 'tutorial.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'tmp.db',
+        'NAME': '/Users/Adan/Developer/tutorial/tutorial/tmp.db',
     }
 }
 
