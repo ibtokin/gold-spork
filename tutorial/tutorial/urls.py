@@ -1,12 +1,6 @@
-from django.conf.urls import patterns, include, url
-from django.contrib import admin
+from django.conf.urls import patterns, url
 
-urlpatterns = patterns('',
-    url(r'^', include('snippets.urls')),
-
-                '''# Other Examples:
-    # url(r'^$', 'tutorial.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-    url(r'^admin/', include(admin.site.urls)),
-                '''
+urlpatterns = patterns('snippets.views',
+    url(r'^snippets/$', 'snippet_list'),
+    url(r'^snippets/(?P<pk>[0-9]+)/$', 'snippet_detail'),
 )
